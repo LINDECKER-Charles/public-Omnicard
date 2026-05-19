@@ -20,7 +20,7 @@ labels: bug
 <!-- Ce qui s'est passé à la place. -->
 
 ## Contexte
-- **Plateforme** : prod (omnicard.fr) / test (test.omnicard.fr)
+- **Page concernée** sur omnicard.fr : ...
 - **Navigateur** : ...
 - **Date / heure approximative** :
 - **Identifiant de partie** (si applicable) :

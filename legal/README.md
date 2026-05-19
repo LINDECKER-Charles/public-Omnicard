@@ -1,6 +1,6 @@
 # Documents légaux Omnicard
 
-Ensemble des textes juridiques applicables au site `omnicard.fr` et à ses sous-domaines (`test.omnicard.fr`).
+Ensemble des textes juridiques applicables au site `omnicard.fr`.
 
 | Document | Objet |
 |---|---|
