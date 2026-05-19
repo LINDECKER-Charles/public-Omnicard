@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Discord — discussion en direct
+    url: https://discord.gg/XBY9FPNv9g
+    about: Pour les échanges rapides ou les questions générales.
+  - name: GitHub Discussions
+    url: https://github.com/LINDECKER-Charles/public-Omnicard/discussions
+    about: Pour les propositions ouvertes au vote ou les discussions de fond.
