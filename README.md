@@ -1,141 +1,63 @@
-# 🎴 Omnicard - Jeu de Cartes Stratégique et Modulaire
+# Omnicard
 
-**Omnicard** est un jeu de cartes stratégique, narratif et hautement personnalisable, mêlant des mécaniques originales à une esthétique soignée. Il s’inspire de nombreux univers issus de la pop culture, des jeux vidéo aux animés, en passant par des créations originales.
----
+> Jeu de cartes à collectionner stratégique et modulaire, jouable dans le navigateur.
+> Pas d'installation, pas de pay-to-win — on ouvre des packs, on construit son grimoire, on défie un ami ou un inconnu en partie classée.
 
-## 🗂️ Arborescence du projet
-
-```
-public-Omnicard
-├───Carte
-│   └───saison_01
-│       ├───bloodborne
-│       ├───jojo_bizzare_adventure
-│       └───wtf
-├───Document
-│   ├───Livret
-│   └───(raccourcis vers Google Drive, Livrets, Règles)
-├───.gitattributes
-├───README.md
-```
-
-📁 **Carte/** : contient toutes les cartes, triées par saison et catégorie (Bloodborne, Jojo, etc.).
-Chaque catégorie contient cinq types de cartes : `Unite`, `Sort`, `Terrain`, `Piege`, `Equipement`.
-
-📁 **Document/** : regroupe les documents de référence pour les joueurs :
-
-* `Livret/` : livrets illustrés complets des cartes
-* `Regle.url` : lien vers les règles officielles
-* `GoogleDrive.url` : accès centralisé à toutes les ressources publiques
+**Démo jouable** : [test.omnicard.fr](https://test.omnicard.fr) · **Production** : [omnicard.fr](https://omnicard.fr)
+**Communauté** : [Discord](https://discord.gg/XBY9FPNv9g) · **Soutenir** : [Ko-fi](https://ko-fi.com/charleslindecker)
 
 ---
 
-## 📚 Livrets et Cartes
+## C'est quoi ?
 
-Chaque **catégorie** (univers) possède son propre **livret illustré**. Ils sont disponibles dans `Document/Livret/`.
+Un TCG tour-par-tour à 30 PV, deck de 40 cartes, mélangeable entre **3 univers** (Bloodborne, JoJo, WTF). Mana qui se convertit en Cristaux, mécanique secondaire d'**Extase** alimentée par les dégâts, plateau à 2 lignes, 5 types de cartes, mode Classé sur l'**Échelle Cosmique** (Poussière Stellaire → Singularité).
 
-Chaque livret comprend des sections par type de carte :
+181 cartes diffusées sur 4 raretés (Commun, Rare, Épique, Ultime) et 3 statuts (Base, Légendaire, Invocation). Drop pondéré dans les packs, decraft de doublons, achat ciblé en fragments — pas de paiement réel, tout passe par la progression in-game.
 
-* 🛡️ **Unité** : personnages avec PV / PA
-* ✨ **Sort** : effets à usage unique
-* 🧠 **Piège** : effets cachés déclenchés sous condition
-* 🌍 **Terrain** : carte active unique influençant le jeu
-* ⚔️ **Équipement** : objets s’attachant à une unité
+## Par où commencer
 
-🔍 **Chaque carte affiche :**
+| Si tu veux… | Va voir |
+|---|---|
+| Comprendre le jeu en 5 minutes | [GETTING-STARTED.md](./GETTING-STARTED.md) |
+| Lire les règles complètes | [docs/rules.md](./docs/rules.md) |
+| Voir des cartes emblématiques | [CARDS-SHOWCASE.md](./CARDS-SHOWCASE.md) |
+| Comprendre l'économie de collection | [docs/economy.md](./docs/economy.md) |
+| Découvrir le mode Classé | [docs/ranked.md](./docs/ranked.md) |
+| Suivre les mises à jour | [CHANGELOG.md](./CHANGELOG.md) |
+| Savoir où va le projet | [ROADMAP.md](./ROADMAP.md) |
+| Rejoindre la communauté | [COMMUNITY.md](./COMMUNITY.md) |
+| Contribuer | [CONTRIBUTING.md](./CONTRIBUTING.md) |
+| Lire les mentions légales | [LEGAL.md](./LEGAL.md) |
 
-* Une illustration
-* Son nom, type, coût, statistiques
-* Sa ou ses familles / catégories
-* Un effet complet (avec mots-clés techniques)
-* Son statut : *Légendaire* (1 seule par deck), *Invocation* (non jouable directement)
+## Les trois univers
 
----
+- **Bloodborne** — chasseurs, gemmes, Vieux Sang. Synergies *Chasseur* (Affûtage, équipements) et *Grand* (Provocation Totale, buffs globaux). 114 cartes.
+- **JoJo** — Joestar, Vampires, Onde (Hamon). Transformations en chaîne, combos de pose, Stand-like buffs. 51 cartes.
+- **WTF** — meme cards et chaos assumé. Floppa, GitGud, Ricardo, Vibecoder. 16 cartes pour casser le sérieux.
 
-## 📖 Règles du jeu
+Détails par univers dans [docs/universes/](./docs/universes/).
 
-🔗 Le document de règles est accessible via `Document/Regle.url`. Voici les grandes lignes du gameplay :
+## Statut
 
-* 🧙 Chaque joueur débute avec **2 Mana**, puis en gagne **+1 par tour** (jusqu'à 10 max)
-* 💎 La Mana non utilisée devient un **Cristal** (max 5), utilisable comme Mana
-* 🃏 Le deck est composé de **40 cartes** réparties selon 5 types
-* ❌ Les cartes **ne défendent pas** automatiquement ; pour attaquer un joueur, son terrain doit être vide
-* ❤️ Chaque joueur commence avec **40 PV**
-* 🔀 Le plateau comporte **2 lignes de 10 emplacements** chacune ; certains effets dépendent de la ligne (avant/arrière)
+Version actuelle : **1.2.0 — Couronne** (mode Classé jouable, matchmaking 4 modes, titres cosmétiques). Voir [CHANGELOG.md](./CHANGELOG.md) pour l'historique complet.
 
-### 🧩 Composition d’un Deck
+Le projet est en développement actif. Les mécaniques, cartes et interfaces évoluent — la roadmap publique est dans [ROADMAP.md](./ROADMAP.md).
 
-Vous pouvez composer votre deck à partir de **jusqu’à 5 catégories** (univers).
+## Soutenir
 
-* **Catégorie principale (1ère)** : jusqu’à 40 cartes (100%)
-* **2e catégorie** : max 20 cartes
-* **3e catégorie** : max 10 cartes
-* **4e catégorie** : max 4 cartes
-* **5e catégorie** : max 1 carte
+Omnicard est gratuit et le restera. Aucun achat in-app, aucun contenu déverrouillé par paiement. Si tu veux soutenir le temps de développement, les serveurs et le café :
 
----
+**[ko-fi.com/charleslindecker](https://ko-fi.com/charleslindecker)**
 
-## 🛠️ Génération des Cartes et Livrets
+Aucun don ne donne accès à un contenu réservé. Voir [LEGAL.md §dons](./LEGAL.md#dons).
 
-Ce dépôt est également utilisé pour générer automatiquement les livrets illustrés à partir d’un **Google Sheet** via un script Google Apps.
+## Contact
 
-### 🔄 Fonctionnalités du script :
+`contact.omnicard@gmail.com`
 
-* Génère un Google Doc avec mise en page automatique
-* Affiche chaque carte avec image, titre, stats, effet, famille, statut
-* Trie les cartes par type (Unité, Sort, etc.) sur des pages distinctes
-* Intègre les images hébergées via Google Drive (liens `/uc?export=view&id=`)
-
-📌 Le script est à venir dans une future section du dépôt.
-
----
-
-## 🧪 Statuts de cartes
-
-* 🟪 **Légendaire** : une seule copie autorisée dans le deck
-* 🔮 **Invocation** : carte créée par effet, non jouable directement
-
----
-
-## 🚧 État du projet
-
-🔧 **En développement actif**. Les mécaniques, cartes, visuels et interfaces sont amenés à évoluer.
-
-✅ Cartes disponibles pour les catégories :
-
-* Jojo’s Bizarre Adventure
-* Bloodborne
-* WTF
-
-📌 Chaque nouvelle saison ou extension ajoutera de nouvelles cartes, effets et mécaniques.
-
----
-
-## 🤝 Contribution
-
-Vous pouvez contribuer de plusieurs manières :
-
-* 📝 Proposer des idées de mécaniques ou d’univers
-* 🐛 Remonter des bugs ou des incohérences via les issues
-* 🧩 Créer vos propres catégories et cartes via le format établi
-
----
-
-## 🔗 Liens utiles
-
-* 📁 [Accès Google Drive Public](https://drive.google.com/drive/folders/1jzkH1dhuYOw4pObaTGOPLtqTOptEKr9g?usp=drive_link)
-* 📜 [Règles Officielles](https://docs.google.com/document/d/1mgtt0cQY0ZIfcbaNRI4depJPEG7k_EK_QcFoiQ_McKQ/edit?usp=drive_link)
-* 📚 [Livrets de cartes](https://docs.google.com/document/d/1Cmm5wtN2-XPV-eHg-GNI3fIKXJe9_oDSnHdmrJCceJc/edit?usp=drive_link)
-
----
-
-## ✉️ Contact
-
-Pour toute question ou retour :
-
-* Email : **[charles.lindecker@outlook.fr](mailto:charles.lindecker@outlook.fr)**
-* Auteur : [Charles Lindecker](https://www.linkedin.com/in/charles-lindecker/)
-
----
-
-> Merci d’avoir consulté ce projet ! Que la partie commence. 🎮
+<!--
+À FAIRE MANUELLEMENT côté GitHub (paramètres du repo) :
+- Settings → General → Features → Discussions ✓
+- Settings → General → Social preview → upload docs/assets/og/og-image.png (1280×640) une fois généré
+- Settings → General → Features → Sponsorships ✓ (le bouton lit .github/FUNDING.yml)
+-->
